@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="assesibility quiz practice quiz project"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesibility Quiz</title>
+    <link rel="stylesheet" href="Quiz CSS.css">
+    
+</head>
+
+<body>
+<header>
+<img id="logo" src="Logohut.png">
+<h1>HTML/CSS Quiz</h1>
+<nav>
+    <ul>
+        <li><a href="#Student-info">Info</a></li>
+        <li><a href="#Student-info">Html</a></li>
+        <li><a href="#Student-info">Css</a></li>
+    </ul>
+</nav>
+
+</header>
+<Main>
+    <form method="post" action="insert.php">
+        <section role="region" aria-labelledby="Student-info">
+        <h2 id="Student-info">Student-info</h2>
+        <fieldset>
+        <div class="Info">
+            <label for="Student-name">Name:</label>
+            <input type="text" name="Student-name" id="Student-name">
+        </div>
+
+        <div class="Info">
+            <label for="Student-email">Email:</label>
+            <input type="email" name="Student-email" id="Student-email">
+        </div>
+
+        <div class="info">
+            <label for="Student-birthdate" id="Student-birthdate">Date Of Birth:<span class="sr-only">(Date Of Birth)</span></label>
+            <input type="Date" name="Student-birthdate" id="Student-birthdate">
+        </div>
+        </section>
+        
+        <section role="region" aria-labelledby="Html-questions">
+            <h2 id="Html-questions">HTML</h2>
+            
+            <div class="question-block">
+                <p>1.</p>
+                <fieldset>
+                <legend>The legend element represents and caption for the content of it's parent fieldset element.</legend>
+                <ul class="Answers-list">
+                    <li><label for="q1-a1"><input type="radio" id="q1-a1" name="q1" value="true">True</label></li>
+                    <li><label for="q1-a2"><input type="radio" id="q1-a2" name="q1" value="false">False</label></li>
+                </ul>
+                </fieldset>
+            </div>
+        </section>
+
+        <section role="region" aria-labelledby="Css-questions">
+           
+            <div class="question-block">
+                <p>2.</p>
+                
+                <fieldset class="question-block" name="html-question-two">
+                    <legend>A label element is required to have a four attribute of the same value as the input id.</legend>
+                <ul class="answer-list">
+                    <li><label for="q2-a1"><input type="checkbox" name="q2 id="q2-a1" value="true"> True</label></li>
+                    <li><label><input type="checkbox" checked="checked" name="q2" id="q2-a2"> False</label></li>
+                  
+                </fieldset>
+            </div>
+        </section>
+        <section role="region" aria-labelledby="Css-questions">
+            <h2 id="Css-questions">CSS</h2>
+            <fieldset>
+            <div class="form-row">
+                <p>3.</p>
+               
+                <div class="question-block" for="customer">Are you a front end developer?</div>
+                <div class="Answer">
+                <select class="Answer" name="customer" id="customer" required>
+                    <option value="">Select option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    </select>
+                </div>               
+            </div>
+        </fieldset>
+        
+            <div class="question-block">
+                <label for="Css-questions">Do you have any questions?:</label>
+                <div class="Answer">
+                    <textarea id="Css-questions" name="Css-questions" rows="5" cols="24" placeholder="Who is a flex-box"></textarea>
+                </div>
+            </div>
+        </section>
+        <button type="submit">Send</button>
+    </form>
+<footer>
+    <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a></br >
+        Nigeria</br >
+        Canada</br >
+        USA
+    </address>
+</footer>
+</Main>
+
+
+</body>
+</html>
